@@ -1,0 +1,115 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": "airbnb-base",
+    "overrides": [
+        {
+            "files": [
+                "scripts/*.js"
+            ],
+            "rules": {
+                "import/no-extraneous-dependencies": [
+                    0
+                ],
+                "no-console": [
+                    0
+                ]
+            }
+        }
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "array-bracket-newline": [
+            "error",
+            {
+                "minItems": 1
+            }
+        ],
+        "array-element-newline": [
+            "error",
+            {
+                "minItems": 1
+            }
+        ],
+        "arrow-parens": [
+            "error",
+            "always"
+        ],
+        "class-methods-use-this": [
+            0
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "import/no-dynamic-require": [
+            0
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            0
+        ],
+        "lines-between-class-members": [
+            "error",
+            "always",
+            {
+                "exceptAfterSingleLine": true
+            }
+        ],
+        "max-len": [
+            0
+        ],
+        "no-empty": [
+            "error",
+            {
+                "allowEmptyCatch": true
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-underscore-dangle": [
+            0
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "minProperties": 1
+            }
+        ],
+        "object-property-newline": [
+            "error",
+            {
+                "allowMultiplePropertiesPerLine": false
+            }
+        ],
+        "sort-keys": [
+            "error",
+            "asc",
+            {
+                "caseSensitive": true,
+                "natural": true
+            }
+        ]
+    }
+}
