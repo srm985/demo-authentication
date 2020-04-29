@@ -1,14 +1,14 @@
 const MOCKED_USERS = [
     {
         created: 1585838126117,
-        displayName: 'Rachit Pabreja',
+        displayName: 'Emelie Doyle',
         groupNames: [
             'All',
-            'Mastercard Users - Testers'
+            'Demo Users - Testers'
         ],
-        mail: 'patrick.harris@mastercard.com',
+        mail: 'emelie.doyle@email.com',
         modified: 1585838391275,
-        name: 'rachit.pabreja',
+        name: 'emelie.doyle',
         principalTypeEnum: 'LOCAL_USER',
         visibility: 'DEFAULT'
     }
@@ -20,18 +20,13 @@ class ThoughtSpot {
     }
 
     async fetchUserDetails(thoughtSpotID) {
+        const [
+            sampleUser
+        ] = MOCKED_USERS;
+
         return ({
-            created: 1585838126117,
-            displayName: 'Rachit Pabreja',
-            groupNames: [
-                'All',
-                'Mastercard Users - Testers'
-            ],
-            mail: `${thoughtSpotID}@email.com`,
-            modified: 1585838391275,
-            name: 'rachit.pabreja',
-            principalTypeEnum: 'LOCAL_USER',
-            visibility: 'DEFAULT'
+            ...sampleUser,
+            mail: `${thoughtSpotID}@email.com`
         });
     }
 
